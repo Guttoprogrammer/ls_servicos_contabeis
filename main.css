@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(./images/o-inspetor-financeiro.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+header {
+  display: block;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+  position: fixed;
+  z-index: 10;
+}
+header img {
+  justify-content: center;
+  max-width: 180px;
+  margin: 18px;
+}
+
+.header_nav {
+  display: flex;
+  background-color: #2C3A47;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+}
+.header_nav ul {
+  display: flex;
+  list-style: none;
+}
+.header_nav ul li {
+  padding: 8px 12px;
+}
+.header_nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+}
+.header_nav ul li a:hover {
+  border-bottom: 1px solid white;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3em;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: 0;
+}
+.hero .hero_content {
+  margin-top: 9em;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2em;
+}
+.hero .hero_content h1 {
+  color: #ffffff;
+  font-size: 3em;
+  border-bottom: 2px solid #cfcfcf;
+  margin-bottom: 32px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+  font-family: "Titillium Web", sans-serif;
+  cursor: default;
+}
+.hero .hero_content h2 {
+  font-size: 2.6em;
+  color: #c2e7ff;
+  border-bottom: 2px solid #cfcfcf;
+  margin-bottom: 32px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+  font-family: "Titillium Web", sans-serif;
+  cursor: default;
+}
+.hero .hero_content p {
+  color: #ffffff;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+  font-size: 1.4em;
+  margin-bottom: 2em;
+  cursor: default;
+}
+.hero .hero_content .cta_button {
+  background-color: #3498db;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+}
+.hero .hero_content .cta_button a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero .hero_content .cta_button:hover {
+  background-color: #2ecc71;
+  transform: translateY(-2px);
+}
+
+.sobre {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  color: #2c3a47;
+  padding: 4em 2em;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.sobre h2 {
+  margin-top: 3em;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #2980b9;
+  font-family: "Titillium Web", sans-serif;
+  border-bottom: 1px solid #2980b9;
+}
+.sobre p {
+  max-width: 800px;
+  margin: 0 auto 1.5em;
+  font-size: 1.8em;
+  line-height: 1.6;
+}
+.sobre .diferenciais {
+  list-style: none;
+  padding: 0;
+}
+.sobre .diferenciais li {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  gap: 8px;
+  justify-content: center;
+}
+.sobre .diferenciais li img {
+  width: 20px;
+  height: auto;
+}
+
+.servicos {
+  padding: 4em 2em;
+  background-color: rgba(249, 249, 249, 0.7);
+  max-width: 1280px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.servicos .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin: 90px auto;
+}
+.servicos .container .servicos_texto {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+.servicos .container .servicos_texto h2 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-family: "Titillium Web", sans-serif;
+  color: #2c3a47;
+  border-bottom: 1px solid #2c3a47;
+}
+.servicos .container .servicos_texto p {
+  margin-bottom: 1em;
+  color: #555;
+  font-size: 1.8em;
+  line-height: 1.6;
+}
+.servicos .container .servicos_texto ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.servicos .container .servicos_texto ul li {
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+}
+.servicos .container .servicos_imagem {
+  flex: 1 1 500px;
+  padding: 20px;
+  text-align: center;
+}
+.servicos .container .servicos_imagem img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.contato {
+  background-color: #f4f4f4;
+  padding: 4em 2em;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.contato__container {
+  text-align: center;
+  margin: 90px auto;
+}
+.contato__titulo {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-family: "Titillium Web", sans-serif;
+}
+.contato__descricao {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  color: #333;
+}
+.contato__formas {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+.contato__formas a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.contato__formas a img {
+  width: 32px;
+  height: 32px;
+}
+.contato__formas a:hover {
+  color: #007bff;
+}
